@@ -1,0 +1,18 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "workbench.colorTheme": "Nord",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.scrollBeyondLastLine": false,
+    "editor.fontFamily": "'MonoLisa', serif",
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/.next": true,
+        "**/node_modules": true
+    },
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 0
+}
