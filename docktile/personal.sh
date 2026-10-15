@@ -12,7 +12,8 @@ add_app() {
 }
 
 add_spacer() {
-  dockutil --no-restart --add '' --type "$1" --section apps
+  # dockutil misreports blank spacer tiles as "adding $PWD", so discard its output.
+  dockutil --no-restart --add '' --type "$1" --section apps >/dev/null
 }
 
 dockutil --no-restart --remove all
@@ -23,7 +24,8 @@ add_app "/Applications/Fantastical.app"
 add_app "/Applications/Things3.app"
 add_spacer spacer
 
-add_app "/Applications/Safari.app"
+# Safari lives in a cryptex on modern macOS; /Applications/Safari.app is only a stub.
+add_app "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
 add_spacer spacer
 
 add_app "/System/Applications/Messages.app"
