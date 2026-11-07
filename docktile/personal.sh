@@ -35,9 +35,15 @@ add_spacer spacer
 
 add_app "/Applications/Visual Studio Code.app"
 add_app "/Applications/Ghostty.app"
+add_app "/Applications/Herdr.app"
 add_app "/Applications/Tower.app"
 add_spacer spacer
 
 dockutil --no-restart --add "$HOME/Downloads" --view fan --display folder --sort dateadded
 
 killall Dock
+
+# Hide Siri from the menu bar.
+defaults write com.apple.Siri StatusMenuVisible -bool false
+defaults write com.apple.Siri SiriPrefStashedStatusMenuVisible -bool false
+killall SystemUIServer ControlCenter 2>/dev/null || true
