@@ -34,11 +34,13 @@ add_app "/Applications/Mimestream.app"
 add_app "/Applications/Slack.app"
 add_spacer spacer
 
-add_app "/Applications/Visual Studio Code.app"
 add_app "/Applications/ChatGPT.app"
 add_app "$HOME/Applications/Claude.app"
-add_app "/Applications/Ghostty.app"
+add_spacer spacer
+
+add_app "/Applications/Visual Studio Code.app"
 add_app "/Applications/Herdr.app"
+add_app "/Applications/Lettera.app"
 add_spacer spacer
 
 dockutil --no-restart --add "$HOME/Downloads" --view fan --display folder --sort dateadded
