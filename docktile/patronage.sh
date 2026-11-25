@@ -39,7 +39,6 @@ add_app "/Applications/ChatGPT.app"
 add_app "$HOME/Applications/Claude.app"
 add_app "/Applications/Ghostty.app"
 add_app "/Applications/Herdr.app"
-add_app "/Applications/Tower.app"
 add_spacer spacer
 
 dockutil --no-restart --add "$HOME/Downloads" --view fan --display folder --sort dateadded
